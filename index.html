@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fatima Koudsi | Web Developer</title>
+  <meta
+    name="description"
+    content="A premium 3D portfolio website for Fatima Koudsi, a web developer building modern and creative web experiences."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&family=Syne:wght@500;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="noise-overlay" aria-hidden="true"></div>
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="#hero">Fatima Koudsi</a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+      <span class="theme-toggle__track">
+        <span class="theme-toggle__thumb"></span>
+      </span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section" id="hero">
+      <div class="hero__content reveal">
+        <p class="eyebrow">Portfolio 2026</p>
+        <div class="hero__signal">
+          <span></span>
+          Neural Interface Active
+        </div>
+        <h1>Fatima Koudsi</h1>
+        <p class="hero__title">Web Developer</p>
+        <p class="hero__tagline">I build modern and creative web experiences.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#projects">Explore Projects</a>
+          <a class="button button--ghost" href="#contact">Let&apos;s Connect</a>
+        </div>
+        <div class="hero__stats">
+          <article class="glass-card">
+            <span>Frontend</span>
+            <strong>Interactive UI</strong>
+          </article>
+          <article class="glass-card">
+            <span>Performance</span>
+            <strong>Fast experiences</strong>
+          </article>
+        </div>
+      </div>
+      <div class="hero__visual reveal">
+        <div class="hero__orb hero__orb--one"></div>
+        <div class="hero__orb hero__orb--two"></div>
+        <div class="hero__note hero__note--top glass-panel parallax-layer" data-depth="0.18" aria-hidden="true">
+          <span>Elegant Motion</span>
+          <strong>Fresh Visual Identity</strong>
+        </div>
+        <div class="hero__note hero__note--side glass-panel parallax-layer" data-depth="0.22" aria-hidden="true">
+          <span>Frontend Focus</span>
+          <strong>Interactive by design</strong>
+        </div>
+        <div class="hero__stage">
+          <div class="hero__backdrop hero__backdrop--one" aria-hidden="true"></div>
+          <div class="hero__backdrop hero__backdrop--two" aria-hidden="true"></div>
+          <div class="hero__backdrop hero__backdrop--three" aria-hidden="true"></div>
+          <div class="hero__gridlines" aria-hidden="true"></div>
+          <canvas id="hero-canvas" aria-label="Animated 3D scene"></canvas>
+          <div class="hero__spotlight" aria-hidden="true"></div>
+          <div class="hero__badge glass-panel">
+            <span>Available for freelance projects</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About Me</p>
+        <h2>Crafting elegant products with code, motion, and intention.</h2>
+      </div>
+      <div class="about__grid">
+        <article class="about__intro glass-panel reveal parallax-layer" data-depth="0.08">
+          <div class="panel-tag">Identity / Vision</div>
+          <p>
+            I&apos;m Fatima Koudsi, a web developer passionate about blending clean architecture
+            with refined interfaces. I love building responsive, accessible, and visually rich
+            digital products that feel effortless to use.
+          </p>
+        </article>
+        <article class="info-card reveal tilt-card">
+          <div class="info-card__icon">UI</div>
+          <h3>Modern Interfaces</h3>
+          <p>Minimal layouts, immersive motion, and thoughtful interactions that elevate every screen.</p>
+        </article>
+        <article class="info-card reveal tilt-card">
+          <div class="info-card__icon">DX</div>
+          <h3>Clean Development</h3>
+          <p>Structured front-end code, reusable components, and maintainable styling systems.</p>
+        </article>
+        <article class="info-card reveal tilt-card">
+          <div class="info-card__icon">3D</div>
+          <h3>Creative Experiences</h3>
+          <p>Interactive visuals, floating depth, and subtle 3D touches that make products memorable.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>Technologies I use to shape intuitive and high-performing web products.</h2>
+      </div>
+      <div class="skills__grid">
+        <article class="skill-card reveal tilt-card">
+          <div class="skill-card__header">
+            <h3>Frontend</h3>
+            <span>92%</span>
+          </div>
+          <p>HTML, CSS, JavaScript, TypeScript, React</p>
+          <div class="progress-bar"><span style="--progress: 92%"></span></div>
+        </article>
+        <article class="skill-card reveal tilt-card">
+          <div class="skill-card__header">
+            <h3>Animation</h3>
+            <span>88%</span>
+          </div>
+          <p>GSAP, CSS motion, smooth transitions, interaction design</p>
+          <div class="progress-bar"><span style="--progress: 88%"></span></div>
+        </article>
+        <article class="skill-card reveal tilt-card">
+          <div class="skill-card__header">
+            <h3>3D & Visuals</h3>
+            <span>81%</span>
+          </div>
+          <p>Three.js, shaders basics, atmospheric lighting, layered composition</p>
+          <div class="progress-bar"><span style="--progress: 81%"></span></div>
+        </article>
+        <article class="skill-stack glass-panel reveal parallax-layer" data-depth="0.1">
+          <div class="panel-tag">Stack Matrix</div>
+          <h3>Core Stack</h3>
+          <div class="stack-list">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>React</span>
+            <span>Three.js</span>
+            <span>Node.js</span>
+            <span>Git</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work with strong visual direction and product-focused execution.</h2>
+      </div>
+      <div class="projects__grid">
+        <article class="project-card reveal tilt-card">
+          <div class="project-card__image gradient-card gradient-card--one">
+            <span>3D Commerce</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Nova Storefront</h3>
+            <p>A futuristic e-commerce experience with motion-driven product storytelling and immersive layouts.</p>
+            <a href="#" aria-label="Open Nova Storefront project">View Project</a>
+          </div>
+        </article>
+        <article class="project-card reveal tilt-card">
+          <div class="project-card__image gradient-card gradient-card--two">
+            <span>Dashboard</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Lumen Analytics</h3>
+            <p>A polished dashboard interface focused on clarity, responsiveness, and animated data interactions.</p>
+            <a href="#" aria-label="Open Lumen Analytics project">View Project</a>
+          </div>
+        </article>
+        <article class="project-card reveal tilt-card">
+          <div class="project-card__image gradient-card gradient-card--three">
+            <span>Portfolio</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Motion Atelier</h3>
+            <p>A creative personal brand site combining cinematic transitions, depth, and carefully staged content.</p>
+            <a href="#" aria-label="Open Motion Atelier project">View Project</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let&apos;s build something elegant, fast, and memorable.</h2>
+      </div>
+      <div class="contact__grid">
+        <article class="contact__panel glass-panel reveal parallax-layer" data-depth="0.08">
+          <div class="panel-tag">Open Channel</div>
+          <p>
+            Whether it&apos;s a portfolio, product landing page, or interactive experience, I enjoy
+            turning ideas into polished interfaces.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://twitter.com" target="_blank" rel="noreferrer">Twitter</a>
+          </div>
+        </article>
+        <form class="contact-form glass-panel reveal parallax-layer" data-depth="0.12">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name">
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com">
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Tell me about your project"></textarea>
+          </label>
+          <button class="button button--primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/three@0.164.1/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
